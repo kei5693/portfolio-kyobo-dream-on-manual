@@ -1,0 +1,61 @@
+@import "reset", "common";
+
+// 4:3 공통 스타일
+@media all and (min-width:1024px) and (device-aspect-ratio: 4/3) and (orientation: landscape){
+  #slidePage1 {
+    img {
+      width: 36.5rem;
+      margin-top: 8%;
+    }
+  }
+  #siteMap {
+    > div {
+      > .contents {
+        > .inner {
+          > div {
+            width: 29%;
+            > h3 {
+              left: 6%;
+              font-size: 3.6rem;
+              > span {font-size: 2.4rem;}
+              > strong:after {transform: translateY(-30%);}
+            }
+          }
+          > ul {
+            padding-left: 29%;
+            > li {
+              > div {
+                padding: 0 2.7rem 0 1.4rem;
+                > h3 span {font-size: 1.8rem;}
+                > h3 strong {font-size: 2rem;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 1024
+@media all and (max-width:1024px) and (device-aspect-ratio: 4/3) and (orientation: landscape){
+
+}
+// 2048
+@media all and (min-width:2048px) and (device-aspect-ratio: 4/3) and (orientation: landscape){
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+// 16:10
+@media all and (min-width:1280px) and (device-aspect-ratio: 16/10) and (orientation: landscape){
+
+}
+// 16:9
+@media all and (min-width:1280px) and (device-aspect-ratio: 16/9) and (orientation: landscape){
+
+}
+
+@media all and (device-aspect-ratio: 569/356) and (orientation: landscape){
+
+}
